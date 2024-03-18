@@ -4,8 +4,8 @@ scope_name: otelcol/deltatocumulative
 status:
   class: processor
   stability:
-    development: [metrics]
-  distributions: []
+    beta: [metrics]
+  distributions: [contrib]
   warnings: [Statefulness]
   codeowners:
     active: [sh0rez, RichieSams]

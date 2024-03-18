@@ -68,6 +68,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/extension/storage/filestorage v0.96.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/processor/attributesprocessor v0.96.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/processor/cumulativetodeltaprocessor v0.96.0
+	github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor v0.96.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatorateprocessor v0.96.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/processor/filterprocessor v0.96.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/processor/groupbyattrsprocessor v0.96.0
@@ -509,6 +510,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.96.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/datadog v0.96.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/docker v0.96.0 // indirect
+	github.com/open-telemetry/opentelemetry-collector-contrib/internal/exp/metrics v0.96.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter v0.96.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig v0.96.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/kafka v0.96.0 // indirect
@@ -908,6 +910,8 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/processor/attr
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/processor/cumulativetodeltaprocessor => ./processor/cumulativetodeltaprocessor/
 
+replace github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor => ./processor/deltatocumulativeprocessor/
+
 replace github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatorateprocessor => ./processor/deltatorateprocessor/
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/processor/filterprocessor => ./processor/filterprocessor
@@ -1152,3 +1156,5 @@ replace (
 )
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/sqlquery => ./internal/sqlquery
+
+replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/exp/metrics => ./internal/exp/metrics
